@@ -3,25 +3,25 @@
 }
 
 body{
-    padding:0;
+    
     margin:0;
-    width:100%;
-    height: 100%;
-    overflow-x: hidden;
-    min-width: 100%;
-
+    padding:0;
+    
 }
 
 .container{
     display:flex;
     flex-direction: column;
     
+    justify-content: stretch;
 }
 
 
 
 .main-header{
     background: gray;
+    min-width:0;
+    
 }
 
 
@@ -29,10 +29,14 @@ body{
 
 
 .main-nav ul{
-    display: flex;
-    justify-content: center;
     
+    justify-content: center;
+    display:flex;
     margin:0;
+    flex-wrap: nowrap;
+    
+    
+    
 }
 
 .main-nav li{
@@ -49,11 +53,11 @@ body{
 
 .showcase-header{
 
-   
+    flex-basis:1000px;
     background-image: linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.3)),url("../images/showcase-photo.jpg");
     background-size: cover;
     background-position: center;
-    flex-basis: 1000px;
+    
     display:flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +91,7 @@ body{
 .introduction-class h2{
     font-size: 2.1em;
     padding: 20px 0 10px 20px;
-    margin:0;
+    
 }
 
 
@@ -100,7 +104,7 @@ body{
 
 .image-logo{
     display:flex;
-    flex-basis:500px;
+    
     
     margin-right:20px;
 }
@@ -117,7 +121,7 @@ body{
 .footer-nav-container{
     display:flex;
     flex-flow: row;
-    flex-basis:100%;
+    
     justify-content: space-evenly;
 }
 
@@ -158,47 +162,63 @@ body{
     padding:20px;
 }
 
-@media(max-width: 600px){
+@media (max-width:640px){
 
-   
-
-    .showcase-header h1{
-        justify-content: center;
-        text-align: center;
-        flex-basis: 100%;
-    }
-
-    .introduction-article{
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        padding:0;
-    }
-
-    .introduction-class h2{
-        justify-content: center;
-        text-align: center;
-        padding-left:0;
-    }
-    .image-logo{
-        flex-basis: 30%;
-        background-repeat: no-repeat;
-        background-size: cover;
+    body{
+        
+        margin:0;
         
     }
 
-    .main-footer p{
-        justify-content: center;
-        text-align: center;
-        flex-basis: 100%;
-        padding-right:0;
+    .main-nav{
+        margin:auto;
     }
 
-}
-
-
-
-
-
-
-
+    .main-nav ul{
+        flex-direction: column;
+        justify-content: center ;
+        text-align: center;
+    }
+ 
+    
+ 
+     .showcase-header h1{
+         justify-content: center;
+         text-align: center;
+         
+     }
+ 
+     .introduction-article{
+         justify-content: center;
+         text-align: center;
+         flex-wrap: wrap;
+         padding:0;
+     }
+ 
+     .introduction-class h2{
+         justify-content: center;
+         text-align: center;
+         padding-left:0;
+     }
+     .image-logo{
+         
+         background-repeat: no-repeat;
+         background-size: cover;
+         
+     }
+ 
+     .main-footer p{
+         justify-content: center;
+         text-align: center;
+         
+         padding-right:0;
+     }
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
