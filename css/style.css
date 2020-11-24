@@ -134,7 +134,7 @@ body{
 .main-footer{
     
     background: #333157;
-    
+    padding: 20px;
 }
 
 
@@ -218,6 +218,14 @@ body{
          text-align: center;
          
          padding-right:0;
+     }
+
+     .introduction-class p{
+         padding:20px;
+     }
+
+     .main-footer{
+         padding:25px;
      }
  
  }
