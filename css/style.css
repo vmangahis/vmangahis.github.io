@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -323,14 +324,86 @@ section{
     width:500px;
     height:50px;
     margin-top:10px;
-    font-size:1.5em;
+    font-size:1.3em;
 }
 
 .contact-form textarea{
     width:500px;
     height:200px;
     margin-top:10px;
-    font-size:1.9em;
+    font-size:1.7em;
+}
+
+.contact-form input[type=submit]{
+    background:transparent;
+    color:white;
+    width:100px;
+    outline:none;
+    cursor: pointer;
+    margin-top:20px;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.contact-form input[type=submit]:hover{
+    background:white;
+    color:black;
+    width:100px;
+    outline:none;
+    cursor: pointer;
+    margin-top:20px;
+    border: 1px solid black;
+    transition: .5s;
+}
+
+
+/* Footer section styling~ more coffee plox */
+
+.main-footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ADDING COLOR TRANSITION UPON HOVER */
+
+.social-media-footer{
+    margin-bottom:15px;
+    display:flex;
+    flex-direction: row;    
+    justify-content: center;
+
+}
+
+.social-media-footer a{
+    margin-right:10px;
+    margin-left:10px;
+}
+
+.social-media-footer i{
+    text-align: center;
+}
+
+.nav-footer{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.nav-footer ul{
+    display:flex;
+    margin-bottom:15px;
+    justify-content: center;
+}
+
+
+
+.nav-footer ul li {
+    
+    margin-right:20px;
+    margin-left:20px;
 }
 
 
