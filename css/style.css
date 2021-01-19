@@ -7,6 +7,13 @@
 body{
     background-color:rgb(10, 10, 10);
     color:white;
+    margin-right:20px;
+    margin-left:20px;
+}
+
+img{
+    width:500px;
+    height:500px;
 }
 
 a{
@@ -151,6 +158,38 @@ section{
     margin-top: 20px;
     margin-left: auto;
 }
+
+.skill-main-container{
+    display:flex;
+    justify-content: center;
+}
+
+.skill-main-container > *{
+    margin:20px;
+}
+
+.skill-container > img{
+    width:300px;
+    height:auto;
+    border-radius: 50%;
+}
+
+.skill-container{
+    border:1px solid gray;
+    padding:25px;
+}
+
+
+.skill-container  li {
+    margin-top:20px;
+}
+
+.skill-title{
+    padding:20px;
+    text-align: center;
+}
+
+
 
 
 
