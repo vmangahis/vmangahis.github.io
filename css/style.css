@@ -31,9 +31,7 @@ li{
 }
 
 
-.main-header{
 
-}
 
 .main-nav{
     display:flex;
@@ -62,7 +60,7 @@ li{
     background-repeat: no-repeat;
     background-position:  50% 100%;
     background-size: 100%;
-    height:500px;
+    height:700px;
     
 
     display:flex;
@@ -188,6 +186,153 @@ section{
     padding:20px;
     text-align: center;
 }
+
+
+/* portfolio */
+
+.portfolio-section h1 {
+    margin:20px;
+}
+
+.content-main-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+
+}
+
+.content-main-container > div{
+    margin-top:20px;   
+}
+
+
+.content-main-container p {
+    font-weight: bolder;
+    opacity:0;
+    transition: .4s;
+    
+}
+
+.content-container{
+    width:300px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.static-site-projects, .backend-only-projects, .full-stack-projects, .desktop-app-projects {
+    position:relative;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+
+.static-site-projects::before{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    content: '';
+    background: url('../images/static-site-image.jpg');
+    background-size: cover;
+    transition: .4s;
+    z-index: -1;
+}
+
+.static-site-projects:hover p{
+    opacity:1;
+    z-index:1;
+
+}
+
+.backend-only-projects::before{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content: '';
+    background: url('../images/backend-only-project.jpg');
+    background-size:cover;
+    transition: .4s;
+    z-index:-1;
+}
+
+.backend-only-projects:hover::before, .full-stack-projects:hover::before, .static-site-projects:hover:before, .desktop-app-projects:hover::before{
+    opacity:.1;
+}
+
+.backend-only-projects:hover p{
+    opacity:1;
+    z-index:1;
+}
+
+
+.full-stack-projects::before{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content: '';
+    z-index:-1;
+    background: url('../images/full-stack-projects.jpg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+.full-stack-projects:hover p{
+    opacity:1;
+    z-index:1;
+}
+
+.desktop-app-projects::before{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    content: '';
+    z-index:-1;
+    background: url('../images/desktop-app-projects.jpeg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+.desktop-app-projects:hover p{
+    opacity:1;
+    z-index:1;
+}
+
+/* contact form */
+
+.contact-form{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
