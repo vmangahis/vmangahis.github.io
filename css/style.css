@@ -9,3 +9,41 @@ body{
     color:white;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li{
+    list-style-type: none;
+}
+
+.main-header{
+    display:flex;
+    padding:20px;
+}
+
+
+.main-header{
+
+}
+
+.main-nav{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-basis:100%;
+
+}
+
+.main-nav ul{
+    display:flex;
+    margin-right:50px;
+    
+    
+}
+.main-nav li{
+    margin-right:100px;
+}
+
