@@ -72,7 +72,8 @@ li{
 
 .showcase-container h1{
     margin:20px;
-    font-size:2.5em;
+    font-size:3.5em;
+
 }
 
 .showcase-container h4{
@@ -84,7 +85,75 @@ li{
     margin:50px;
     width:200px;
     height:47px;
+
+    background-color:transparent;
+    border: 1px solid white;
+    color:white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.showcase-container button:hover{
+  
+    background-color:white;
+    border: 1px solid black;
+    color:black;
+    cursor: pointer;
     
 }
+
+section{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:50px;
+}
+
+.about-section-container{
+    display:flex;
+    justify-content: center;
+}
+
+.about-section-container > *{
+    padding:50px;
+}
+
+.about-section-container > img{
+    width:500px;
+    height:500px;
+    border-radius: 50%;
+}
+
+.basic-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.basic-info > * {
+    margin:10px;
+    font-size:1.5em;
+}
+
+.about-details{
+    margin-left: 50px;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.social-media-link{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.social-media-link > * {
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+
+
+
 
 
