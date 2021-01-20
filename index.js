@@ -1,0 +1,1 @@
+window.addEventListener('load', AOS.refresh);
