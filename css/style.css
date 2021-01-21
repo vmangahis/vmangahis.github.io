@@ -1,5 +1,3 @@
-
-
 *{
     padding:0;
     margin:0;
@@ -12,7 +10,7 @@ body{
    
    
     color:white;
-    
+   
     
 }
 
@@ -35,6 +33,7 @@ li{
 .general-container{
     margin-right:20px;
     margin-left:20px;
+
 }
 
 .main-header{
@@ -79,6 +78,10 @@ li{
 
 /* Showcase page */
 
+
+.main-showcase{
+    margin:0;
+}
 .main-showcase{
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5)), url('../images/showcase-photo.jpg');
     
@@ -86,8 +89,8 @@ li{
     background-position:  center center;
     background-size: 100% 100%;
     
-    height:700px;
-    min-height:700px;    
+    height:500px;
+       
 
     display:flex;
     align-items: center;
@@ -183,9 +186,14 @@ section{
     margin-left: auto;
 }
 
+.skill-section{
+    
+}
+
 .skill-main-container{
     display:flex;
     justify-content: center;
+    
 }
 
 .skill-main-container > *{
@@ -490,6 +498,39 @@ section{
     .contact-form{
         align-items: center;
     }
+}
+
+@media(max-width:800px){
+    .skill-main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-showcase h1, h4{
+        text-align: center;
+    }
+
+    .skill-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about-section-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .basic-info > *{
+        text-align: center;
+    }
+
+    .skill-container{
+        text-align: center;
+        
+    }
+    
 }
 
 
