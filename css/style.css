@@ -9,7 +9,10 @@
 
 body{
     background-color:rgb(10, 10, 10);
+   
+   
     color:white;
+    
     
 }
 
@@ -312,7 +315,7 @@ section{
     content: '';
     z-index:-1;
     background: url('../images/full-stack-projects.jpg');
-    background-size:100%;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     transition: .4s;
 }
@@ -331,7 +334,7 @@ section{
     content: '';
     z-index:-1;
     background: url('../images/desktop-app-projects.jpeg');
-    background-size:100%;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     transition: .4s;
 }
@@ -440,7 +443,54 @@ section{
 }
 
 
+@media (max-width:600px)
+{
+    *{
+        margin:0;
+        padding:0;
+        width: auto;
+    }
 
+    .main-header{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    
+
+    .main-nav ul, main-nav{
+        flex-direction:column;
+        align-items: center;
+        margin:0;
+    }
+
+
+    .showcase-container h1, h4{
+        
+        text-align: center;
+    }
+
+    .about-section-container{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .skill-main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-main-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form{
+        align-items: center;
+    }
+}
 
 
 
